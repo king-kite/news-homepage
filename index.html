@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Home Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/images/favicon-32x32.png" />
+		<style>
+			.attribution { font-size: 11px; margin: 3rem 0; text-align: center; }
+			.attribution a { color: hsl(228, 45%, 44%); }
+		</style>
+  </head>
+  <body>
+    <div class="container">
+			<nav>
+				<header class="header-container">
+					<div class="logo-container">
+						<img alt="logo" src="assets/images/logo.svg" />
+					</div>
+					<div id="open-icon" class="icon-menu">
+						<img alt="logo" src="assets/images/icon-menu.svg" />
+					</div>
+				</header>
+				<div id="menu" class="mobile-menu-container">
+					<div class="mobile-menu">
+						<div id="close-icon" class="icon-menu-close">
+							<img alt="logo" src="assets/images/icon-menu-close.svg" />
+						</div>
+						<ul class="mobile-menu-list">
+							<li><a href="#">home</a></li>
+							<li><a href="#">new</a></li>
+							<li><a href="#">popular</a></li>
+							<li><a href="#">trending</a></li>
+							<li><a href="#">categories</a></li>
+						</ul>		
+					</div>
+				</div>
+			</nav>
+
+			<main class="main-container">
+				<!-- Top Container -->
+				<div class="top-container">
+					<div class="top-image-container">
+						<img class="mobile-image" alt="top-mobile-image" src="assets/images/image-web-3-mobile.jpg" />
+						<img class="desktop-image" alt="top-mobile-image" src="assets/images/image-web-3-desktop.jpg" />
+					</div>
+					<h1 class="top-title">
+						The Bright Future of Web 3.0?
+					</h1>
+					<div class="top-content">
+						<p class="description">
+							We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+  						But is it really fulfilling its promise?
+						</p>
+						<a class="top-link" href="#">read more</a>
+					</div>
+				</div>
+
+				<!-- Middle Container -->
+				<div class="middle-container">
+					<h1 class="middle-title">new</h1>
+					<ul class="middle-list">
+						<li class="middle-list-item">
+							<a href="#">Hydrogen VS Electric Cars</a>
+							<p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+						</li>
+						<li class="middle-list-item">
+							<a href="#">The Downsides of AI Artistry</a>
+							<p>What are the possible adverse effects of on-demand AI image generation?</p>
+						</li>
+						<li class="middle-list-item">
+							<a href="#">Is VC Funding Drying Up?</a>
+							<p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Bottom Container -->
+				<div class="bottom-container">
+					<ul class="bottom-list">
+						<li class="bottom-list-item">
+							<!-- Bottom List Image -->
+							<div class="bottom-list-item-image-container">
+								<img alt="retro-pcs" src="assets/images/image-retro-pcs.jpg" />
+							</div>
+							<!-- Bottom Content -->
+							<div class="bottom-list-item-content">
+								<h2>01</h2>
+								<a href="#">Reviving Retro PCs</a>
+								<p>What happens when old PCs are given modern upgrades?</p>
+							</div>
+						</li>
+						<li class="bottom-list-item">
+							<!-- Bottom List Image -->
+							<div class="bottom-list-item-image-container">
+								<img alt="retro-pcs" src="assets/images/image-top-laptops.jpg" />
+							</div>
+							<!-- Bottom Content -->
+							<div class="bottom-list-item-content">
+								<h2>02</h2>
+								<a href="#">Top 10 Laptops of 2022</a>
+								<p>Our best picks for various needs and budgets.</p>
+							</div>
+						</li>
+						<li class="bottom-list-item">
+							<!-- Bottom List Image -->
+							<div class="bottom-list-item-image-container">
+								<img alt="retro-pcs" src="assets/images/image-gaming-growth.jpg" />
+							</div>
+							<!-- Bottom Content -->
+							<div class="bottom-list-item-content">
+								<h2>03</h2>
+								<a href="#">The Growth of Gamings</a>
+								<p>How the pandemic has sparked fresh opportunities.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+			</main>
+		</div>
+		<div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+			Coded by <a href="https://github.com/king-kite">Emmanuel (king-kite)</a>.
+		</div>
+		<script>
+			let openIcon = document.getElementById('open-icon')
+			let closeIcon = document.getElementById('close-icon')
+			let menu = document.getElementById('menu')
+
+			openIcon.addEventListener('click', function () {
+				menu.classList.add('mobile-menu-container-open')
+			})
+
+			closeIcon.addEventListener('click', () => {
+				menu.classList.remove('mobile-menu-container-open')
+			})
+
+		</script>
+  </body>
+</html>
